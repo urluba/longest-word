@@ -5,7 +5,7 @@ python: 3.7
 dist: xenial # https://github.com/travis-ci/travis-ci/issues/9815#issuecomment-401756442
 sudo: false
 install:
-  - pip install pipenv
+  - pip install --user pipenv
   - pipenv install --dev
 script:
   - pipenv run nosetests
